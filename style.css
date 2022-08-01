@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px dashed red;
+}
+
+body {
+    
+}
+
+.title-container {
+    padding: 3rem;
+    border: 2px solid black;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.quote-container {
+    text-align: center;
+    border: 2px solid black;
+    padding: 4rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: 1rem 0;
+    border: 2px solid black;
+}
+
+.quote-text {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.quote-owner {
+    font-size: 1rem;
+    text-decoration: underline;
+    font-weight: lighter;
+    padding: 10px 0;
+    color: blueviolet;
+}
+
+.hide {
+    /* display: none; */
+}
+

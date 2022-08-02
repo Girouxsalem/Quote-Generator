@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 2rem;
+    margin: 1.2rem;
     background-color: darkorchid;
 }
 
@@ -48,7 +48,7 @@ body {
 #quoteDisplay {
     padding: 30px;
     margin: 1.5rem 10rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     font-style: italic;
     color:orangered;
@@ -69,13 +69,16 @@ footer {
 @media screen and (min-width: 650px) and (max-width:900px) {
     body, main, header, footer {
         max-width: 900px;
-        margin:0;
+    }
+
+    body {
+        margin: 1rem 2rem 0 2rem;
     }
 
     .title-container {
         padding: 2rem 0 1rem 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
     }
     
     .title {
@@ -83,7 +86,7 @@ footer {
     }
     
     .quote-container {
-        padding: 1.5rem 0 2rem 0;
+        padding: 1.5rem 0 0.5rem 0;
     }
     .btn {
         font-size: 1.1rem;
@@ -100,8 +103,8 @@ footer {
     footer {
         padding: 20px;
         font-size: 0.9rem;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
         margin-top: 1rem;
     }
 }
@@ -109,14 +112,16 @@ footer {
 @media screen and (max-width:650px) {
     body, main, header, footer {
         max-width: 650px;
-        margin: 0;
-        width: 100%;
+    }
+
+    body {
+        margin: 1.5rem 1rem;
     }
 
     .title-container {
         padding: 3rem 0 1rem 0;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
     }
     
     .title {
@@ -124,31 +129,27 @@ footer {
     }
     
     .quote-container {
-        padding: 2.5rem 0 1rem 0;
+        padding: 3rem 0 1rem 0;
     }
     .btn {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: 700;
         border-radius: 47%;
         padding: 15px 25px;
         margin: 1rem 0;        
     }
     
-    .btn:hover {
-        box-shadow:0px 0px 20px 15px lightcyan;
-    }
-    
     #quoteDisplay {
         padding: 25px;
         margin: 2rem 1rem;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     
     footer {
-        padding: 15px;
-        font-size: 0.8rem;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        padding: 20px;
+        font-size: 0.9rem;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
         margin-top: 1rem;
     }
 }

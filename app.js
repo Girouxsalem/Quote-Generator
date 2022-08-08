@@ -121,3 +121,23 @@ function newQuote() {
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 
+soundBtn = document.querySelector(".sound");
+copyBtn = document.querySelector(".copy");
+twitterBtn = document.querySelector(".twitter");
+
+soundBtn.addEventListener("click", () => {
+    let utterance = new SpeechSynthesisUtterance(`${quoteDisplay.innerText}`);
+    speechSynthesis.speak(utterance);
+    // SpeechSynthesisUtterance is a web speech api that represents a speech request
+});
+
+copyBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText(quoteDisplay.innerText);
+    // Copies the text currently occupying the space and writes the text onto the clipboard on your phone
+});
+
+twitterBtn.addEventListener("click", () => {
+    let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteDisplay.innerText}`;
+    window.open(tweetUrl, "_blank");
+    // Opens a new twitter window which takes you directly to posting the current quote.
+})

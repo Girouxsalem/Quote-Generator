@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e65c9aea9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Quote Generator</title>
 </head>
@@ -11,9 +12,20 @@
     <header class="title-container">
         <h1 class="title">Quote Generator</h1>
     </header>
-    <main class="quote-container">
+    <main>
+        <div class="quote-container">
             <button class="btn" onclick="newQuote()">Generate Quote</button>
             <p id="quoteDisplay"></p>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons">
+                <ul>
+                    <li class="sound"><i class="fa-solid fa-volume-high"></i></li>
+                    <li class="copy"><i class="fa-solid fa-copy"></i></li>
+                    <li class="twitter"><i class="fa-brands fa-twitter"></i></li>
+                </ul>
+                </div>
+            </div>
     </main>
     <footer>&copy; Claude Giroux 2022</footer>
 </body>
